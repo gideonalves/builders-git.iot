@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%; 
+    display: block; 
+}
+
+header {
+    height: 126px;
+    background: rgb(31, 31, 31);
+}
+
+.header-one {
+    background: rgb(164, 162, 162);
+    z-index: 0;
+}
+
+.container {
+    max-width: 864px;
+    margin: 0 auto;     
+}
+
+#header-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* --title-font: 'Poppins', sans-serif;
+    --body-font: 'DM Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-one div {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.header-one span {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(250, 192, 32);  
+    margin-right: 10px;  
+}
+
+.header-one p {
+    font-weight: bold;
+    color: #ffffff;   
+}
+
+.social a i {
+    color: #ffffff;  
+    margin-left: 10px;
+    font-size: 1rem;
+    background: rgb(149 147 147);
+    padding: 10px;
+}
+
+.social #background {
+    background: rgb(250, 192, 32);  
+}
+
+#header-thirteen > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-tele {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* padding: 30px 0; */
+    margin: 25px 0 25px 0;
+    gap: 30px;
+    visibility: visible;
+}
+
+.container-tele .tele p {
+    color: #ffffff;  
+    font-size: 1rem;
+}
+
+.container-tele .tele span {
+    color: rgb(250, 192, 32);  
+}
+
+/*----- NAV -------- */
+#nav {
+    background: rgb(250, 192, 32);
+    margin-top: -15px;
+
+    position: relative;
+}
+
+#menu {
+    display: flex;
+    list-style: none;/* tira as bolinhas da li */
+    gap: .5rem; /*espaço entre os menus*/
+    flex-wrap: wrap;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+    color: white;
+    font: 700 1rem 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu a:hover {   
+    color: rgb(31, 31, 31);   
+}
+
+/* main {
+    background-color: rgb(31, 31, 31);  
+} */
+
+.section .container {
+    height: 70vh;
+    background-image: url("/image/fundo.png"); 
+    background-repeat: no-repeat;
+
+    background-size: contain;
+}
+
+.section .container h1 {
+    color: white;
+}
+
+footer {
+    height: 64px;
+    background: rgb(250, 192, 32);
+}
+
+/*-------------------------------------*/
+@media (max-width: 400px) {
+    #header-two {
+        padding: 0 10px;
+    }
+    .social a i {
+        margin-left: 2px;
+        font-size: 0.75rem;       
+        padding: 10px 5px 10px 5px;
+    }
+    .header-one span {
+        font-size: 0.75rem;      
+        font-weight: none;
+
+        color: rgb(250, 192, 32);  
+        margin-right: 10px; 
+    }
+
+    .header-one p {
+        font-size: 0.75rem;            font-weight: none;
+    }
+
+    #header-two {
+        flex-direction: row-reverse;
+    } 
+
+    #header-thirteen {
+        display: flex;
+        align-items: center;
+    }
+    
+    .container-tele  {
+        visibility: hidden;
+    }
+}
+

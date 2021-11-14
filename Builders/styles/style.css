@@ -1,0 +1,277 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    color: #ffffffff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* img {
+    max-width: 100%; 
+    display: block; 
+} */
+
+.header {    
+    background: rgb(31, 31, 31);
+    height: 150px;
+}
+
+.header-container > div {
+    max-width: 940px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header-container .span {
+    align-items: center;
+    display: inline-flex;
+    gap: 10px;
+}
+
+.header-container .span span {
+    text-transform: uppercase;
+    color: rgb(250, 192, 32);      
+}
+
+.header-container .social a {
+    margin-left: 2px;
+    color: #ffffffff;
+
+}
+
+.header-container .social a i {
+    color: #ffffff;  
+    font-size: 1rem;
+    background: rgb(149 147 147);
+    padding: 8px 10px;
+}
+
+.header-container-two {
+    padding: 30px 0px 18px 0px;
+    flex-wrap: wrap;
+}
+
+.header-container-two img {
+    width: 200px;
+    display: block;
+}
+
+.container-tele {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-tele .tele {
+    margin-left: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.container-tele .tele p {
+    color: #ffffffff;
+    font-size: 12px;
+}
+
+.container-tele .tele span {
+    color: rgb(250, 192, 32);  
+}
+
+#nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#nav ul {
+
+    top: -2px;
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    background: rgb(250, 192, 32);
+    width: 64%;
+    padding: 15px;
+    /* justify-content: end; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    width: auto;
+    height: 71vh;
+    background-image: url("/image/trator2.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {   
+    width: 64%;
+    padding: 0px 28px;
+    position: absolute;
+    margin-top: 106px;
+}
+
+.main-container h1 {  
+    text-transform: uppercase; 
+    color: rgb(250, 192, 32);
+    font-size: 2.125rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-links {
+    display: flex;
+    gap: 30px;
+}
+
+.btn-links a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase; 
+    padding: 15px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.btn-links .btn-reade {
+    background: rgb(250, 192, 32);
+    color: #ffffff;
+}
+
+.btn-links .btn-here {
+    background: black;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.information {
+    display: flex;
+    height: 150px;
+    background: rgb(250, 192, 32);
+}
+
+.info-container {  
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}
+
+.btn-get {
+    background: rgb(250, 192, 32);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-leran {
+    color: rgb(250, 192, 32);
+    background: #ffffff;
+}
+
+.card-container {
+    margin: 0 auto;
+    max-width: 65%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card-container .card {
+    width: 282px;
+    height: 300px;
+}
+
+.card-container .card img {
+    width: 100%;
+}
+
+.card-container .card h2 {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.card-container .card p {
+    margin: 10px 0 10px 0;
+
+    color: black;
+    font-size: 0.5rem;
+}
+
+.card a {
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid black;
+    color: black;
+    font-size: 0.75rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .header-container .span span, p {
+        font-size: 12px;
+    }
+    .container-tele {
+        visibility: hidden;
+        display: none;
+    }
+    .header-container-two img {
+        width: 200px;
+        padding: 0 0 0 15px;
+    }
+    #nav {
+    /* display: none; */
+        height: 84vh;
+        background: rgb(250, 192, 32);
+    }
+    #nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    #nav ul li a {
+        padding: 10px;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .header-container .social a i {
+        color: #ffffff;
+        font-size: 1rem;
+        background: rgb(149 147 147);
+        padding: 7px 3px;
+    }
+    .header-container-two {
+        padding: 10px 0px 18px 0px;
+        flex-wrap: wrap;
+    }
+
+
+
+}
